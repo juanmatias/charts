@@ -531,3 +531,12 @@ metrics:
     ##
     # selector:
     #   prometheus: my-prometheus
+
+# sourcefile source plugin data
+sourcefile:
+    filename: /sourcefile/sourcefile.json
+
+# shaman provider
+shaman:
+  apiToken: addheretheapitoken
+  baseUrl: https://shaman:1632

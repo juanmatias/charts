@@ -1,0 +1,12 @@
+{{- range .Values.sources }}
+{{- if eq . "sourcefile" }}
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ template "external-dns.fullname" $ }}-sourcefile
+  labels: {{ include "external-dns.labels" $ | nindent 4 }}
+data:
+  sourcefile.json: |-
+    []
+{{- end }}
+{{- end }}
