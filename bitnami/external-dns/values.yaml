@@ -535,7 +535,8 @@ metrics:
 
 # sourcefile source plugin data
 sourcefile:
-    filename: /sourcefile/sourcefile.json
+  filename: /sourcefile/sourcefile.json
+  fqdn: "local"
 
 # shaman provider
 shaman:

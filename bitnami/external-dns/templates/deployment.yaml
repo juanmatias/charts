@@ -377,6 +377,8 @@ spec:
             {{- end }}
             {{- range .Values.sources }}
             {{- if eq . "sourcefile" }}
+            - name: SOURCE_FILE_FQDN
+              value: {{ $.Values.sourcefile.fqdn }}
             - name: SOURCE_FILE_NAME
               value: {{ $.Values.sourcefile.filename }}
             {{- end }}
